@@ -1,6 +1,82 @@
+:root{
+    --primary-color:#202020;
+    --secondary-color:#FBFBFB;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font:'Poiret One', cursive;;
+}
+
 body{
-font-family: 'Montserrat',sans-serif;
+/* font-family: 'Montserrat',sans-serif; */
+font-family: var(--main-font);
+
 }
 h1{
-    font-family: 'Poiret One',cursive;
+    /* font-family: 'Poiret One',cursive; */
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 0.1em;
+
+}
+h2 {
+    /* font-family: 'Poiret One',cursive; */
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+
+}
+@media(max-width: 700px){
+    h1 {
+            /* font-family: 'Poiret One',cursive; */
+            text-transform: uppercase;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: 0.1em;
+    
+        }
+    h2 {
+        /* font-family: 'Poiret One',cursive; */
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+
+    }
+
+}
+
+.hero{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("/img/main.jpeg");
+    background-size: 100%;
+    padding: 100px 0 200px 0;
+}
+.hero p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.btn-branding{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 10%;
+    border-radius: 50px;
+    padding: 18px 30px;
+    margin-top: 20px;
+}
+.btn-branding :hover{
+    border: 1px solid var(--secondary-color)!important;
+    color: red!important;
 }
