@@ -50,6 +50,9 @@ h2 {
     }
     
 }
+a{
+    text-decoration: none;
+}
 
 .hero{
     background-color: var(--primary-color);
@@ -89,7 +92,7 @@ h2 {
 a img{
     mix-blend-mode: luminosity;
     width: 100%;
-    max-height: 90%;
+    height: 90%;
 }
 .img-active:hover{
     mix-blend-mode: normal;
